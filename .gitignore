@@ -25,8 +25,16 @@
 *.la
 *.a
 *.lib
+*.ilk
+*.pdb
 
 # Executables
 *.exe
 *.out
 *.app
+
+# cl.exe generated files
+build
+
+# vscode personal configuration
+.vscode
