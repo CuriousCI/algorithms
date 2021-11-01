@@ -35,6 +35,9 @@
 
 # cl.exe generated files
 build
+target
 
 # vscode personal configuration
 .vscode
+Cargo.toml
+Cargo.lock

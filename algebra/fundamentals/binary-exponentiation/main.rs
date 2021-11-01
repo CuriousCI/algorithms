@@ -4,10 +4,10 @@ fn recursive_binary_pow(base: u64, exponent: u64) -> u64 {
 	}
 
 	let result = recursive_binary_pow(base, exponent >> 1);
-	if exponent & 1 == 1{
+	if exponent & 1 == 1 {
 		return result * result * base;
 	} else {
-		return result * result
+		return result * result;
 	}
 }
 
@@ -29,7 +29,7 @@ fn modular_binary_pow(mut base: u64, mut exponent: u64, modulo: u64) -> u64 {
 	let mut result = 1;
 	base %= modulo;
 
-	while exponent > 0 { 
+	while exponent > 0 {
 		if exponent & 1 == 1 {
 			result *= base % modulo;
 		}
